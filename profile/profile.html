@@ -1,108 +1,232 @@
+
 <!DOCTYPE html>
 <html lang="vi">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My profile</title>
+    <title>My Profile - Nguyễn Văn Nhất Hoàng</title>
 </head>
-<style>  
- { background-color: #0b1120;
-    font-family: Arial, sans-serif;
-    color: white;
-    margin: 0;
-    padding: 30px;}
- .khung {
-            max-width: 900px;
-            margin: 30px auto;
-            padding: 30px;
-            background-color: #151f38;
-            border: 1px solid #263b65;
-            border-radius: 15px;
-        }
-        .khungnho1
-         {
-            margin:30px auto;
-        }
-     .anh
-        { 
-            width: 220px;
-            height: 260px;
-            flex-shrink: 0;
-            border: 3px solid #60a5fa;
-            border-radius: 15px;
-            overflow: hidden;
-            background-color: #263b65;
-        }
 
-        .anh img 
-        {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        } 
-        .khungnho
-        {
-            display: flex;
-            gap: 20px;
-            margin-top: 30px;
-        }
-        .muctieu,.sothich 
-            {
-        flex: 1;
-        padding: 20px;
-        background-color: #1e3158;
-        border: 1px solid #3b5990;
-        border-radius: 15px;
-        }
-     h1 {
-            color: #60a5fa;
-            font-size: 36px;
-        }
-
-        h2 {
-            color: #93c5fd;
-            font-size: 22px;
-        }
-
-        h3 {
-            color: #bfdbfe;
-            font-size: 18px;
-        }
-        .muctieu, .sothich {
-    flex: 1;
-    padding: 20px;
-    background-color: #1c2b49;
-    border: 1px solid #344d78;
-    border-radius: 15px;
-}
-
-            
-</style>
 <body>
-<div class="khung">
-    <div class="gioithieu">
-        <div class="khungnho1">
-     <h1>Xin chào! Tôi là Nguyễn Văn Nhất Hoàng</h1> </div>
-    Tôi là newbie thoi </div>
-     <h2> Thông tin cá nhân </h2> 
-     <p> MSSV: 52.01.104.125. Lớp: CNTT B  </p>
-     <P> Ngày sinh:22/12/2007</P>
-     <p> Sinh ra và lớn lên tại Quảng Ngãi</p>
-     <div class="anh">
-                <!-- Đổi anh.jpg thành tên ảnh của bạn -->
-                <img src="anh.jpg" alt="Ảnh đại diện của tôi">
-            </div>
-    </div>
-    <div class="khungnho">
-        <div class="muctieu"> 
-        <h3>🎯 Mục tiêu</h3>
-        <p> Học tốt C++, HTML và CSS.
-            Không rớt môn nào. </p>
-            </div>
-        <div class="sothich">
-        <h4> Sở thích </h4>
-        <p> nghe nhạc, chơi game, bóng đá</p>
-    </div>
- </div>   
+
+    
+    <header>
+        <h1>Xin chào. Tôi là Nguyễn Văn Nhất Hoàng</h1>
+        <p>Chào mừng bạn đến với trang giới thiệu cá nhân của tôi!</p>
+
+        
+        <nav>
+            <a href="#gioithieu">Giới thiệu</a> |
+            <a href="#thongtin">Thông tin cá nhân</a> |
+            <a href="#sothich">Sở thích</a> |
+            <a href="#kynang">Kỹ năng</a> |
+            <a href="#thoikhoabieu">Thời khóa biểu</a> |
+            <a href="#lienhe">Liên hệ</a>
+        </nav>
+    </header>
+
+    <hr>
+
+    
+    <main>
+
+        
+        <section id="gioithieu">
+            <h2>Giới thiệu bản thân</h2>
+
+            <article>
+                <img src="anh.jpg" alt="Ảnh đại diện của tôi"
+                     width="220">
+
+                <p>
+                    Xin chào! Tôi là Nguyễn Văn Nhất Hoàng,
+                    sinh viên lớp Công nghệ thông tin B.
+                </p>
+
+                <p>
+                    Tôi mới bắt đầu tìm hiểu về lập trình.
+                    Hiện tại, tôi đang học C++, HTML và CSS nhằm
+                    để xây dựng nền tảng kiến thức về công nghệ thông tin.
+                </p>
+            </article>
+        </section>
+
+        <hr>
+
+        
+        <section id="thongtin">
+            <h2>Thông tin cá nhân</h2>
+
+            <ul>
+                <li>Họ và tên: Nguyễn Văn Nhất Hoàng</li>
+                <li>MSSV: 52.01.104.125</li>
+                <li>Lớp: CNTT B</li>
+                <li>Quê quán: Quảng Ngãi</li>
+                <li>Ngành học: Công nghệ thông tin</li>
+            </ul>
+        </section>
+
+        <hr>
+
+        
+        <section id="sothich">
+            <h2>Sở thích</h2>
+
+            <ul>
+                <li>Nghe nhạc</li>
+                <li>Chơi game</li>
+                <li>Chơi thể thao</li>
+                <li>Ngủ</li>
+            </ul>
+        </section>
+
+        <hr>
+
+        
+        <section id="kynang">
+            <h2>Kỹ năng</h2>
+
+            <ul>
+                <li>C++: Đang học và rèn luyện các bài toán khó</li>
+                <li>HTML: Biết xây dựng cấu trúc trang web cơ bản</li>
+                <li>CSS: Chắc chưa ổn lắm</li>
+                
+            </ul>
+        </section>
+
+        <hr>
+
+        
+        <section id="muctieu">
+            <h2>Mục tiêu học tập</h2>
+
+            <p>
+                Tôi mong muốn nắm vững các kiến thức lập trình, cũng như
+                cải thiện khả năng tư duy và kỹ năng cần thiết để tìm 
+                được công việc tốt trong tương lai.
+            </p>
+
+            <p>
+                Mục tiêu trước mắt là học tốt C++, HTML,
+                không rớt môn và sống vui vẻ.
+            </p>
+        </section>
+
+        <hr>
+        <section id="thoikhoabieu">
+            <h2>Thời khóa biểu</h2>
+
+            <table border="1">
+                
+
+                <thead>
+                    <tr>
+                        <th>Thứ</th>
+                        <th>Buổi sáng</th>
+                        <th>Buổi chiều</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>Thứ 2</td>
+                        <td>Thiết kế Web</td>
+                        <td>Lập trình cơ bản</td>
+                    </tr>
+
+                    <tr>
+                        <td>Thứ 3</td>
+                        <td>Triết học</td>
+                        <td>Ngủ</td>
+                    </tr>
+
+                    <tr>
+                        <td>Thứ 4</td>
+                        <td>Ngủ</td>
+                        <td>Lập trình cơ bản và cơ sở toán</td>
+                    </tr>
+
+                    <tr>
+                        <td>Thứ 5</td>
+                        <td>Toán rời rạc</td>
+                        <td>Cơ sở toán</td>
+                    </tr>
+
+                    <tr>
+                        <td>Thứ 6</td>
+                        <td>Ngủ</td>
+                        <td>Thể dục</td>
+                    </tr>
+
+                    <tr>
+                        <td>Thứ 7</td>
+                        <td>Tự học</td>
+                        <td>Giải trí</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <hr>
+
+        <!-- Liên kết mạng xã hội -->
+        <section id="lienhe">
+            <h2>Thông tin liên hệ</h2>
+
+            <p>
+                Facebook:
+                <a href="https://www.facebook.com/">
+                    Trang Facebook của tôi
+                </a>
+            </p>
+
+            <p>
+                GitHub:
+                <a href="https://nhathoang67.github.io/web-/ ">
+                    Trang GitHub của tôi
+                </a>
+            </p>
+        </section>
+
+        <hr>
+
+        
+        <section>
+            <h2>Gửi lời nhắn cho tôi</h2>
+
+            <form action="#" method="post">
+
+                <p>
+                    <label for="hoten">Họ và tên:</label>
+                    <input type="text" id="hoten"
+                           name="hoten" required>
+                </p>
+
+                <p>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email"
+                           name="email" required>
+                </p>
+
+                <p>
+                    <label for="noidung">Nội dung:</label>
+                    <br>
+                    <textarea id="noidung" name="noidung"
+                              rows="5" cols="40"></textarea>
+                </p>
+
+                <button type="submit">Gửi liên hệ</button>
+
+            </form>
+        </section>
+
+    </main>
+
+    <hr>
+    <footer>
+        <p>© 2026 - Nguyễn Văn Nhất Hoàng</p>
+    </footer>
+
 </body>
-</html> 
+</html>
