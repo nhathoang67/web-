@@ -1,11 +1,267 @@
+
 <!DOCTYPE html>
-<html lang="en">
+<html lang="vi">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>CV cá nhân</title>
+<style>
+    * {
+        box-sizing: border-box;
+    }
+    body {
+        margin: 0;
+        padding: 30px 15px;
+        background: #edf1f5;
+        font-family: Arial, sans-serif;
+        color: #263849;
+    }
+    .cv {
+        width: 100%;
+        max-width: 950px;
+        margin: 0 auto;
+        display: flex;
+        background: white;
+        border-radius: 10px;
+        overflow: hidden;
+        box-shadow: 0 5px 20px rgba(0, 0, 0, 0.12);
+    }
+    .cottrai {
+        width: 40%;
+        background: #24384b;
+        color: white;
+        padding: 28px 22px;
+    }
+    .cotphai {
+        width: 60%;
+        padding: 32px 30px;
+    }
+    .anh {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    .anh img {
+        width: 170px;
+        height: 180px;
+        object-fit: cover;
+        border-radius: 50%;
+        border: 4px solid white;
+    }
+    .ten {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .ten h1 {
+        font-size: 23px;
+        color: white;
+        margin: 0 0 8px;
+        line-height: 1.4;
+    }
+    .ten p {
+        font-size: 14px;
+        color: #cbd8e4;
+        margin: 0;
+    }
+    .thongtin {
+        background: rgba(255, 255, 255, 0.10);
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        border-radius: 8px;
+        padding: 10px 12px;
+        margin-bottom: 25px;
+    }
+
+    .thongtin p {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        margin: 10px 0;
+        font-size: 13px;
+    }
+    .icon {
+        width: 27px;
+        height: 27px;
+        flex-shrink: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        background: #dce5ed;
+        color: #24384b;
+        font-size: 15px;
+    }
+
+    .thongtin p span:last-child {
+        overflow-wrap: anywhere;
+    }
+    .cottrai h2 {
+        font-size: 16px;
+        color: white;
+        border-bottom: 1px solid #718096;
+        padding-bottom: 8px;
+        margin: 24px 0 12px;
+        text-transform: uppercase;
+    }
+     .cotphai h2 {
+        font-size: 19px;
+        color: #284b6a;
+        border-bottom: 2px solid #dce5ed;
+        padding-bottom: 7px;
+        margin: 20px 0 12px;
+    }
+    .header {
+        border-bottom: 2px solid #dce5ed;
+        padding-bottom: 18px;
+        margin-bottom: 20px;
+    }
+    .header h1 {
+        font-size: 27px;
+        color: #24384b;
+        margin: 0 0 8px;
+    }
+    .header p {
+        color: #54718b;
+        font-size: 16px;
+        font-weight: bold;
+        margin: 0;
+    }
+    p {
+        font-size: 14px;
+        line-height: 1.7;
+        margin: 8px 0;
+    }
+    .cot-trai p, .cot-trai li { 
+        color: #e1e8ef;
+    }
+    ul {
+        padding-left: 20px;
+    }
+    li {
+        font-size: 14px;
+        line-height: 1.7;
+        margin-bottom: 6px;
+    }
+    .noidung {
+        display: flex;
+        gap: 20px;
+        align-items: flex-start;
+    }
+    h3 {
+        font-size: 16px;
+        color: #365d7e;
+        margin: 14px 0 6px;
+    }
+    .gioithieu, .chungchi, .kinhnghiem, .hocvan {
+        margin-bottom: 20px;
+    }
+@media (max-width: 700px) {
+
+    body {
+        padding: 12px;
+    }
+
+    .cv {
+        flex-direction: column;
+    }
+    .cottrai, .cotphai {
+            width: 100%;
+            padding: 24px;
+        }
+    .noidung {
+            flex-direction: column;
+        }
+    .kynang, .kinhnghiem {
+            width: 100%;
+        }
+    .header h1 {
+            font-size: 24px;
+        }
+    }
+</style>
 </head>
 <body>
-    
+
+    <div class="cv"> 
+
+        <div class="cottrai">
+
+            <div class="anh">
+            <img src="anhdaidien/anh.jpg" alt="Ảnh đại diện">
+            </div>
+             <div class="ten">
+                <h1>Nguyễn Văn Nhất Hoàng</h1>
+                <p>Sinh viên Công nghệ thông tin</p>
+            </div>
+            <div class="thongtin">
+                <p>
+                    <span class="icon">✆</span>
+                    <span>0356221207</span>
+                </p>
+                <p>
+                    <span class="icon">✉</span>
+                    <span>nguyenvannhathoang2007@gmail.com</span>
+                 </p>
+                 <p>
+                    <span class="icon">⌂</span>
+                    <span>112 Bùi Hữu Nghĩa, phường An Đông, tp HCM</span>
+                </p>
+
+            </div>
+
+            <div class="kynang">
+                <h2>Kỹ năng</h2>
+                <ul>
+                    <li>Sử dụng HTML, CSS, C++ vào lập trình</li>
+                    <li>Ứng dụng AI như ChatGPT, Gemini, Claude để làm việc và học tập</li>
+                    <li>Kỹ năng viết content trên các nền tảng mạng xã hội</li>
+                    <li>Khả năng học hỏi nhanh</li>
+                    <li>Làm việc nhóm và giao tiếp tốt</li>
+                </ul>
+            </div>
+            <div class="sothich">
+                <h2>Sở thích</h2>
+                <ul>
+                    <li>Đi du lịch khám phá</li>
+                    <li>Nghe nhạc</li>
+                    <li>Chơi thể thao</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="cotphai">
+
+            <div class="gioithieu">
+                <h2>Giới thiệu</h2>
+                <p>
+                    Tuy tôi chưa thể giỏi về công nghệ thông tin, nhưng tôi luôn không ngừng cố gắng học hỏi và rèn luyện để bản thân tốt hơn, vì một tương lai tươi sáng, một công việc ổn định.
+                </p>
+            </div>
+
+            <div class="chungchi">
+                <h2>Chứng chỉ</h2>
+                <p>12/2025 Chứng chỉ IELTS 6.0</p>
+            </div>
+
+            <div class="kinhnghiem">
+                <h2>Kinh nghiệm / Dự án học tập</h2>
+                <p>Sử dụng HTML và CSS để xây dựng trang web cá nhân, đồ án thiết kế web nhóm</p>
+            </div>
+
+            <div class="hocvan">
+                <h2>Học vấn</h2>
+                <p>2026-2030</p>
+                <p>Đại học Sư phạm Thành Phố Hồ Chí Minh</p>
+                <p>Ngành: Công nghệ thông tin</p>
+            </div>
+            
+            <div class="muctieu">
+                <h2>Mục tiêu</h2>
+                <p>Tốt nghiệp loại giỏi ngành Công nghệ thông tin</p>
+            </div>
+
+        </div>
+
+    </div>
+
 </body>
 </html>

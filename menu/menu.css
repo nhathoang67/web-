@@ -1,0 +1,16 @@
+
+*{ margin: 0; padding: 0; box-sizing: border-box;}
+body { font-family: Arial, sans-serif; background-color: #f1f5f9;}
+.header { display: flex; align-items: center; justify-content: space-between; padding: 20px 40px; background-color: #3253be; color: white;}
+.logo { font-size: 22px; font-weight: bold;}
+#menu {display: flex; gap: 25px;}
+#menu a { color: white; text-decoration: none; font-size: 14px;}
+#menu a:hover { color: #5d86b4;}
+#menuButton {display: none;}
+@media screen and (max-width: 768px) {
+    .header { flex-wrap: wrap;}
+    #menu { display: none;width: 100%;}
+    #menu a {display: block;padding: 10px 0;}
+    #menuButton {display: block; padding: 10px 15px; background-color: #2563eb; color: white; border: none; border-radius: 5px; cursor: pointer;}
+}
+

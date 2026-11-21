@@ -7,83 +7,91 @@
     <title>Hồ cá</title>
 
     <style>
-        #hoca {
-    position: fixed;
-    bottom: 0;
-    left: 1%;
-    width: 98%;
-    height: 75%;
-    box-sizing: border-box;
-    overflow: hidden;
-    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRIj-1CyUYGrG8eYiqMcmQoPiToe6bWpRrN_qInxmME9bKDRNTpohDkC5PM&s=10");
-    background-size: 100% 100%;
-    background-position: center;
-    background-repeat: no-repeat;
-    border: 2px double blue;
-    border-top: 0; }
+    #hoca {
+        position: fixed;
+        bottom: 0;
+        left: 1%;
+        width: 98%;
+        height: 75%;
+        box-sizing: border-box;
+        overflow: hidden;
+        background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRIj-1CyUYGrG8eYiqMcmQoPiToe6bWpRrN_qInxmME9bKDRNTpohDkC5PM&s=10");
+        background-size: 100% 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+        border: 2px double blue;
+        border-top: 0; }
     img {
         position: absolute;
         width: 150px;
         max-width: 30%;
         border-radius: 10px;}
-
     .diver1 {
         bottom: 70px;
         left: 0;
         animation: boi1 25s linear infinite;}
-
     .diver2 {
         bottom: 10px;
-        left: 0;
-        animation: boi2 25s linear infinite;}
+        left: 200px;
+        animation: lenxuong1 4s ease-in-out infinite alternate;}
     .diver3 {
         bottom: 30px;
-        left: 0;
-        animation: boi1 28s linear infinite;}
-    .ca1 {
+        left: 50px;
+        animation: lenxuong2 5s ease-in-out infinite alternate;}
+    .camap {
         height: 200px;
         width: 200px;
         bottom: 200px;
         left: 0;
         animation: boi2 16s linear infinite;}
-    .ca4 {
+    .rua {
         width:120px;
         bottom: 150px;
         left: 0;
         animation: boi2 30s linear infinite;} 
-    .ca5 {
+    .ca1 {
         width:300px;
         bottom: 350px;
         left: 0;
         animation: boi2 24s linear infinite;}
-    .ca6, .ca7 {
+    .ca2 {
+        width:300px;
+        bottom: 250px;
+        left: 0;
+        animation: boi2 24s linear infinite;}
+    .ca3, .ca4 {
         width: 100px;
         height: 90px;
         max-width: none;
         object-fit: contain;}
-
-    .ca6 {
+    .ca3 {
         left: 0;
         top: 0;
         animation: cheo1 18s linear infinite;}
-    .ca7 {
+    .ca4 {
         right: 0;
         top: 0;
         animation: cheo2 22s linear infinite;}
 
+@keyframes lenxuong1 {
+    0% {transform: translateY(0);}
+
+    100% {transform: translateY(-150px);} }
+@keyframes lenxuong2 {
+    0% {transform: translateY(0); }
+
+    100% {transform: translateY(-150px);} }
+
 @keyframes boi1 {
     0% {
         left: 0;
-        transform: scaleX(1);}
-
+        transform: scaleX(1);}      
     49.9% {
         left: calc(100% - 150px);
         transform: scaleX(1);}
-
-    50% {
+    50% { 
         left: calc(100% - 150px);
         transform: scaleX(-1);}
-
     99.9% {
         left: 0;
         transform: scaleX(-1);}
@@ -111,109 +119,74 @@
     0% {
         left: 0;
         top: 0;
-        transform: scaleX(1);
-    }
-
+        transform: scaleX(1);}
     49.9% {
         left: calc(100% - 100px);
-        top: calc(100% - 65px);
-        transform: scaleX(1);
-    }
-
+        top: calc(100% - 90px);
+        transform: scaleX(1);}
     50% {
         left: calc(100% - 100px);
-        top: calc(100% - 65px);
-        transform: scaleX(-1);
-    }
-
+        top: calc(100% - 90px);
+        transform: scaleX(-1);}
     99.9% {
         left: 0;
         top: 0;
-        transform: scaleX(-1);
-    }
-
+        transform: scaleX(-1);}
     100% {
         left: 0;
         top: 0;
-        transform: scaleX(1);
-    }
-}
-
-
-/* Cá thứ 7: từ trên phải xuống dưới trái */
+        transform: scaleX(1);} }
 
 @keyframes cheo2 {
     0% {
         right: 0;
         top: 0;
-        transform: scaleX(-1);
-    }
-
+        transform: scaleX(-1);}
     49.9% {
         right: calc(100% - 100px);
-        top: calc(100% - 65px);
-        transform: scaleX(-1);
-    }
-
+        top: calc(100% - 90px);
+        transform: scaleX(-1); }
     50% {
         right: calc(100% - 100px);
-        top: calc(100% - 65px);
-        transform: scaleX(1);
-    }
-
+         top: calc(100% - 90px);
+        transform: scaleX(1);}
     99.9% {
         right: 0;
         top: 0;
-        transform: scaleX(1);
-    }
-
+        transform: scaleX(1);}
     100% {
         right: 0;
         top: 0;
-        transform: scaleX(-1);
-    }
-}
+        transform: scaleX(-1); } }
 body {
     margin: 0;
     min-height: 100vh;
-
-    background:
-        radial-gradient(ellipse at 50% 10%,
-        #1e6091 0%,
-        transparent 55%),
-
-        linear-gradient(
-        to bottom,
-        #071b33,
-        #1b6ca6,
-        #020c18
-        );
-}
+    background:radial-gradient(ellipse at 50% 10%, #1e6091 0%, transparent 55%),
+    linear-gradient( to bottom, #071b33, #1b6ca6, #020c18);}
 
     </style>
 </head>
 
 <body>
-
     <div id="hoca">
-
         <img class="diver1"
         src="https://cdn.pixabay.com/photo/2013/07/12/13/58/scuba-diving-147683_960_720.png">
         <img class="diver2"
         src="hinh anh/diver2.png">
-        <img class="ca1" 
-        src="hinh anh/shark.png" >
         <img class="diver3"
         src="hinh anh/diver3.png">
-        <img class="ca4"
+        <img class="camap" 
+        src="hinh anh/shark.png" >
+        <img class="rua"
         src="hinh anh/turtle.png">
-        <img class="ca5"
+        <img class="ca1"
         src="hinh anh/faintSchool.png">
-        <img class="ca6"
+        <img class="ca2"
+        src="hinh anh/faintSchool.png">
+        <img class="ca3"
         src="hinh anh/goldFishSchool.png">
-        <img class="ca7"
-        src="hinh anh/goldFishSchool.png">
-        
+        <img class="ca4"
+        src="hinh anh/goldFishSchool.png">   
     </div>
 
 </body>
